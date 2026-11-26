@@ -13,6 +13,7 @@ A deadpan one-star review of something essential, in a single line.
 ## How it works
 
 `main.py` (pure Python standard library, no network, no dependencies)
+builds the entry, validates it (one line, 121 bytes, SHA-256 match), then
 writes exactly that one line to `entry.txt` in the output directory
 (`MAKEFUN_OUTPUT_DIR`, default `/output`).
 
